@@ -6,6 +6,8 @@
 
 This repository contains a take-home coding challenge focused on frontend development. The task is to build an interactive chat interface based on a provided Figma design. The challenge is designed to assess your ability to deliver a polished, responsive, and accessible UI with engaging micro-interactions.
 
+Live preview: https://ersulba.github.io/Iris-code-challange/
+
 ## Challenge Summary
 
 - **Goal:** Implement a chat interface from the provided Figma design, with streaming message appearance and a typing indicator.
@@ -51,7 +53,10 @@ password: Iris
 
 ## Assumptions & Trade-offs
 
-_Document any assumptions you made about functionality, and describe any trade-offs or design decisions. If you had more time, what would you improve or add?_
+- **Assumption:** Consolidated the duplicate microphone buttons in the chat view into a single control and centered it on the X axis so it is easier to reach with one hand on mobile.
+- **Assumption:** Followed the Figma flow that hides the navigation page list once a conversation is open, treating the chat as a focused, full-screen experience.
+- **Trade-off:** The current implementation keeps all state purely on the client; a production-ready voice assistant would require substantial hydration and streaming infrastructure to reconcile server events with the UI.
+- **Trade-off:** Prioritized implementing the chat experience over persistent navigation, so returning to the conversation list would need additional routing work in a future iteration.
 
 ## Submission
 
