@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/REPO_NAME/',
+  base: '/Iris-code-challange/',
   plugins: [react(), tailwindcss()],
   server: {
     open: true,
